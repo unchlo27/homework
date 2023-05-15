@@ -1,0 +1,78 @@
+
+.box1 {
+  width: 100px;
+  height: 100px;
+  border: 10px solid seagreen;
+  border-radius: 30px;
+  background-color: rgb(204, 253, 225);
+  margin-bottom: 50px;
+
+  animation: my-first-animation 2s infinite alternate;
+}
+
+@keyframes my-first-animation {
+
+  /* 주석처리 된 내용포함 3가지 모두 다 같은 뜻  */
+
+  /* from{width: 100px;}
+  to{width: 300px;} */
+
+  /* 0% {}
+  50% {width: 300px;}
+  100% {} */
+
+  50% {width: 300px;}
+
+}
+
+div {
+  width: 100px;
+  height: 100px;
+  border: 10px solid silver;
+  border-radius: 50%;
+  background-color: rgb(245, 255, 199);
+}
+
+
+.box2 {
+  animation-name: rotate;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite; 
+  /* animation-iteration-count 를 1로 설정하면 한바퀴만 돌고 끝난다 */
+  animation-direction: alternate;
+  animation-play-state: paused;
+}
+
+
+.box2:hover {
+  animation-play-state: running;
+}
+
+
+@keyframes rotate {
+  from {transform: rotate(0);}
+  to {transform: rotate(360deg);}
+}
+
+
+
+p {
+  width: 100px;
+  height: 100px;
+  border: 10px solid rgb(148, 172, 101);
+  border-radius: 30%;
+}
+
+.box3 {
+  background-color: rgb(255, 255, 255);
+  animation: fill-mode 3s linear backwards;
+}
+
+
+
+@keyframes fill-mode {
+  0% {background-color: rgb(207, 231, 85);}
+  50% {width: 200px;}
+  100% {background-color: #c8c8f4;}
+}

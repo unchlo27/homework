@@ -144,3 +144,12 @@ li {
   background-color: lightgray;
   border-radius: 50%;
 }
+
+.top-left span:nth-of-type(1):hover {
+  color: red;
+}
+
+#fill-heart {
+  display: none;
+  fill: red;
+}
